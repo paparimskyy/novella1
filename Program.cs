@@ -9,16 +9,15 @@ class Program
         string choice;
         bool gameOver = false;
 
-        // СЮЖЕТ: Вы - последний рыцарь ордена Погибшего Солнца в мире, поглощенном вечной тьмой.
-        // Древнее зло пробудилось, и только вы можете восстановить священный артефакт.
+        
 
-        Console.WriteLine("🌑 Вы стоите на руинах собора, где когда-то хранился Светоч Вечности...");
+        Console.WriteLine(" Вы стоите на руинах собора, где когда-то хранился Светоч Вечности...");
         Console.WriteLine("Среди обломков виднеются два предмета. Что возьмёте?");
         Console.WriteLine("1 - Проклятый меч предков\n2 - Древний щит с угасшей руной");
         choice = Console.ReadLine();
 
-        if (choice == "1") Console.WriteLine("⚔️ Меж пожирает вашу душу, но дарует силу тьмы.");
-        else Console.WriteLine("🛡️ Щит мерцает тусклым светом - последний отсвет былой славы.");
+        if (choice == "1") Console.WriteLine(" Меж пожирает вашу душу, но дарует силу тьмы.");
+        else Console.WriteLine(" Щит мерцает тусклым светом - последний отсвет былой славы.");
 
         step++;
 
@@ -27,9 +26,9 @@ class Program
         choice = Console.ReadLine();
 
         if (choice == "1")
-            Console.WriteLine("👻 Тени мертвых рыцарей шепчут вам пророчество о грядущей битве.");
+            Console.WriteLine(" Тени мертвых рыцарей шепчут вам пророчество о грядущей битве.");
         else
-            Console.WriteLine("💨 Вы избегаете встречи с призраками, но теряете знание.");
+            Console.WriteLine("Вы избегаете встречи с призраками, но теряете знание.");
 
         step++;
 
@@ -40,10 +39,10 @@ class Program
         bool hasGolemHeart = false;
         if (choice == "1")
         {
-            Console.WriteLine("💎 Вы побеждаете голема и забираете его каменное сердце.");
+            Console.WriteLine(" Вы побеждаете голема и забираете его каменное сердце.");
             hasGolemHeart = true;
         }
-        else Console.WriteLine("🌉 Вы спускаетесь в подземные туннели, теряя время.");
+        else Console.WriteLine(" Вы спускаетесь в подземные туннели, теряя время.");
 
         step++;
 
@@ -53,9 +52,9 @@ class Program
 
         bool heardWhispers = choice == "1";
         if (heardWhispers)
-            Console.WriteLine("🌳 Голоса леса пытаются сломить вашу волю, но вы слышите правду.");
+            Console.WriteLine(" Голоса леса пытаются сломить вашу волю, но вы слышите правду.");
         else
-            Console.WriteLine("⛰️ Долгий путь через горы истощает ваши силы.");
+            Console.WriteLine(" Долгий путь через горы истощает ваши силы.");
 
         step++;
 
@@ -64,9 +63,9 @@ class Program
         choice = Console.ReadLine();
 
         if (choice == "1")
-            Console.WriteLine("🩹 Вы перевязываете раны и готовы к новым испытаниям.");
+            Console.WriteLine(" Вы перевязываете раны и готовы к новым испытаниям.");
         else
-            Console.WriteLine("💀 Инфекция распространяется, но вы ближе к цели.");
+            Console.WriteLine(" Инфекция распространяется, но вы ближе к цели.");
 
         step++;
 
@@ -76,9 +75,9 @@ class Program
 
         bool ally = choice == "1";
         if (ally)
-            Console.WriteLine("🕊️ Паладин присоединяется к вам, открывая тайные знания.");
+            Console.WriteLine(" Паладин присоединяется к вам, открывая тайные знания.");
         else
-            Console.WriteLine("⚔️ Вы побеждаете паладина, но тратите много сил.");
+            Console.WriteLine(" Вы побеждаете паладина, но тратите много сил.");
 
         step++;
 
@@ -88,9 +87,9 @@ class Program
 
         bool crossedRiver = choice == "1";
         if (crossedRiver)
-            Console.WriteLine("🌊 Вы теряете часть воспоминаний, но сохраняете цель.");
+            Console.WriteLine(" Вы теряете часть воспоминаний, но сохраняете цель.");
         else
-            Console.WriteLine("🕒 Поиск брода отнимает драгоценное время.");
+            Console.WriteLine(" Поиск брода отнимает драгоценное время.");
 
         step++;
 
@@ -99,9 +98,9 @@ class Program
         choice = Console.ReadLine();
 
         if (choice == "1")
-            Console.WriteLine("🐺 Вы побеждаете тварей, но привлекаете внимание большего зла.");
+            Console.WriteLine(" Вы побеждаете тварей, но привлекаете внимание большего зла.");
         else
-            Console.WriteLine("🕳️ Вы пережидаете атаку в безопасности.");
+            Console.WriteLine(" Вы пережидаете атаку в безопасности.");
 
         step++;
 
@@ -112,9 +111,9 @@ WriteLine("\nШаг 9. Заканчиваются припасы.");
 
         bool hungry = choice == "2";
         if (hungry)
-            Console.WriteLine("🍂 Голод ослабляет вас, но вы не теряете время.");
+            Console.WriteLine(" Голод ослабляет вас, но вы не теряете время.");
         else
-            Console.WriteLine("🦌 Охота успешна - вы восстановили силы.");
+            Console.WriteLine(" Охота успешна - вы восстановили силы.");
 
         step++;
 
@@ -125,11 +124,11 @@ WriteLine("\nШаг 9. Заканчиваются припасы.");
         bool foundArtifact = false;
         if (choice == "1")
         {
-            Console.WriteLine("🔮 Вы находите Древний Амулет - ключ к победе над тьмой!");
+            Console.WriteLine(" Вы находите Древний Амулет - ключ к победе над тьмой!");
             foundArtifact = true;
         }
         else
-            Console.WriteLine("🚶 Вы продолжаете путь, не отвлекаясь на руины.");
+            Console.WriteLine(" Вы продолжаете путь, не отвлекаясь на руины.");
 
         step++;
 
@@ -139,9 +138,9 @@ WriteLine("\nШаг 9. Заканчиваются припасы.");
             Console.WriteLine("1 - Активировать амулет\n2 - Сохранить силу");
             choice = Console.ReadLine();
             if (choice == "1")
-                Console.WriteLine("💥 Амулет открывает портал в цитадель зла!");
+                Console.WriteLine(" Амулет открывает портал в цитадель зла!");
             else
-                Console.WriteLine("⚡️ Вы сохраняете энергию для решающей битвы.");
+                Console.WriteLine(" Вы сохраняете энергию для решающей битвы.");
         }
 
         step++;
@@ -159,9 +158,9 @@ WriteLine("\nШаг 9. Заканчиваются припасы.");
         choice = Console.ReadLine();
 
         if (choice == "1")
-            Console.WriteLine("🏰 Вы пережидаете бурю в разрушенной башне.");
+            Console.WriteLine(" Вы пережидаете бурю в разрушенной башне.");
         else
-            Console.WriteLine("🌩️ Молнии обжигают вас, но вы ближе к цитадели.");
+            Console.WriteLine(" Молнии обжигают вас, но вы ближе к цитадели.");
 
         step++;
 
@@ -171,9 +170,9 @@ WriteLine("\nШаг 9. Заканчиваются припасы.");
 
         bool enterCitadel = choice == "1";
         if (enterCitadel)
-            Console.WriteLine("🚪 Врата с грохотом открываются. Судьба ждет внутри...");
+            Console.WriteLine(" Врата с грохотом открываются. Судьба ждет внутри...");
         else
-            Console.WriteLine("🏃 Вы отступаете, но тьма настигнет вас рано или поздно.");
+            Console.WriteLine(" Вы отступаете, но тьма настигнет вас рано или поздно.");
 
         step++;
 
@@ -182,30 +181,31 @@ WriteLine("\nШаг 9. Заканчиваются припасы.");
         // --- КОНЦОВКИ ДАРК ФЭНТЕЗИ ---
         if (enterCitadel && foundArtifact)
         {
-            Console.WriteLine("🏁 Концовка 1: ЦЕНА ПОБЕДЫ");
+            Console.WriteLine(" Концовка 1: ЦЕНА ПОБЕДЫ");
             Console.WriteLine("Вы побеждаете лорда тьмы, но амулет поглощает вашу душу. Вы становитесь новым хранителем тьмы...");
         }
         else if (hasGolemHeart && !enterCitadel)
         {
-            Console.WriteLine("🏁 Концовка 2: ВЕЧНЫЙ СТРАЖ");
+            Console.WriteLine(" Концовка 2: ВЕЧНЫЙ СТРАЖ");
             Console.WriteLine("Вы используете сердце голема чтобы создать новую крепость, но обрекаете себя на вечную охрану границ тьмы.");
         }
         else if (ally && directAssault)
         {
-            Console.WriteLine("🏁 Концовка 3: ЖЕРТВА СОЮЗНИКА");
+            Console.WriteLine(" Концовка 3: ЖЕРТВА СОЮЗНИКА");
             Console.WriteLine("Паладин жертвует собой чтобы вы могли нанести решающий удар. Вы побеждаете, но остаетесь в одиночестве.");
         }
         else if (!ally && hungry)
         {
-            Console.WriteLine("🏁 Концовка 4: ПРОКЛЯТИЕ ОДИНОЧЕСТВА");
+            Console.WriteLine(" Концовка 4: ПРОКЛЯТИЕ ОДИНОЧЕСТВА");
             Console.WriteLine("Ослабленный голодом и ранами, вы падаете перед вратами цитадели. Тьма поглощает ваш разум.");
         }
         else
         {
-            Console.WriteLine("🏁 Концовка 5: ТЕНЬ СОМНЕНИЯ");
+            Console.WriteLine(" Концовка 5: ТЕНЬ СОМНЕНИЯ");
             Console.WriteLine("Вы отступаете, чтобы сражаться в другой день. Но тьма продолжает расти, и надежда тает...");
         }
 
         Console.WriteLine("\nДа пребудет с вами сила... или тьма.");
     }
 }
+
